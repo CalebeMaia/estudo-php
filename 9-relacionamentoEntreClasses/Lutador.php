@@ -14,7 +14,7 @@
      $this->nacionalidade=$na;
      $this->idade=$id;
      $this->altura=$al;
-     $this->peso=$pe;
+     $this->setPeso($pe);
      $this->vitorias=$vi;
      $this->derrotas=$de;
      $this->empates=$em;
@@ -22,29 +22,29 @@
     // métodos 
     public function apresentar(){
        echo "<p>-------------------</p>";
-       echo "<p>CHEGOU A HORA! o lutado".$this->getNome();
-       echo "veio diretamente de ".$this->getNacionalidade();
-       echo "tem". $this->getIdade()."anos e pesa" . $this->getPeso()."kg";
-       echo "<br>Ele tem". $this->getVitoria()+"vitorias";
-       echo $this->getDerrota(). "Derrotas e " . $this->getEmpate(). "emaptes";;
+       echo "<p> CHEGOU A HORA! o lutador </p> " .$this->getNome();
+       echo " veio diretamente de ". $this->getNacionalidade();
+       echo " tem ". $this->getIdade()." anos e pesa " . $this->getPeso()." kg ";
+       echo "<br> Ele tem ". $this->getVitorias(). " vitorias ";
+       echo $this->getDerrotas(). " Derrotas e " . $this->getEmpates(). " emaptes ";;
     }
     public function status(){
         echo "<p>-------------------</p>";
-        echo "<p>".$this->getNome()."é um peso".$this->getCategoria();
-        echo "e ja ganhou".$this->getVitoria()."vezes";
-        echo "Perdeu".$this->getVitoria()."vezes e";
-        echo "Empatou".$this->getEmpate()."vezes !";
+        echo "<p>".$this->getNome()." é um peso ".$this->getCategoria();
+        echo " e ja ganhou ".$this->getVitorias()." vezes";
+        echo " Perdeu ".$this->getDerrotas()." vezes e";
+        echo " Empatou ".$this->getEmpates()." vezes !";
         
 
     }
     public function ganharLuta(){
-        $this->setVitoria($this->getVitoria()+1);
+        $this->setVitorias($this->getVitorias()+1);
     }
     public function perderLuta(){
-        $this->setDerrota($this->getDerrota()+1);
+        $this->setDerrotas($this->getDerrotas()+1);
     }
     public function empatarLuta(){
-        $this->setEmpate($this->getEmpate()+1);
+        $this->setEmpates($this->getEmpates()+1);
     }
     // metodos acessores
     public function getNome(){
@@ -73,15 +73,16 @@
     }
     public function getPeso(){
         return $this->peso;
-        $this->setCategoria()// não precisa passar o parametro
+       
     }
     public function setPeso($pe){
         $this->peso=$pe;
+        $this->setCategoria();// não precisa passar o parametro
     }
     public function getCategoria(){
         return $this->categoria;
     }
-    public function setCategoria(){// não precisa colocar paramentro pois ele esta implementado no setPeso();
+    private function setCategoria(){// não precisa colocar paramentro pois ele esta implementado no setPeso();
         if($this->peso<52.2){
             $this->categoria="Inválido";
         }elseif($this->peso<=70.3){
@@ -94,23 +95,23 @@
             $this->categoria="invalido";
         }
     }
-    public function getVitoria(){
-        return $this->vitoria;
+    public function getVitorias(){
+        return $this->vitorias;
     }
-    public function setVitoria($v){
-        $this->vitoria=$v;
+    public function setVitorias($v){
+        $this->vitorias=$v;
     }
-    public function getDerrota(){
-        return $this->derrota;
+    public function getDerrotas(){
+        return $this->derrotas;
     }
-    public function setDerrota($d){
-        $this->derrota=$d;
+    public function setDerrotas($de){
+        $this->derrotas=$de;
     }
-    public function getEmpate(){
-        return $this->empate;
+    public function getEmpates(){
+        return $this->empates;
     }
-    public function setEmpate($p){
-        $this->vitoria=$p;
+    public function setEmpates($em){
+        $this->empates=$em;
     }
 }
 
