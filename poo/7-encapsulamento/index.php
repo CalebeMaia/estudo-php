@@ -15,6 +15,7 @@
         $c->maisVolume();
         $c->ligar();
         $c->maisVolume();
+        $c->abrirMenu();
         print_r($c);
     ?>
     </pre>

@@ -1,4 +1,5 @@
 <?php
+//Faz a ligação entre model e a view
 require_once "Model.php";
 require_once "View.php";
     class Controller{

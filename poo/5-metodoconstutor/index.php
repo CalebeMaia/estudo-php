@@ -10,6 +10,7 @@
     <?php 
     require_once'Caneta.php';   
     $c3=new Caneta();
+    $c3->Caneta("bic","preto",0.7);
     print_r($c3)
     ?>
     </pre>

@@ -1,0 +1,65 @@
+*{/*zerar a margin do documento*/
+    padding: 0px;
+    margin: 0px;
+    
+}
+body{
+    background-image: url("../IMAGENS/fundo.png"); /*Colocar imagem*/
+    background-position: 50% 60%; /*centralizar a imagem*/
+    color:white;/*Letra do h1*/
+    font-size:arial ;
+}
+input{
+    display:block; /* Coloca um em baixo do outro o fomulário */
+    height: 55px;/*altura*/
+    width: 400px;/*Largura*/
+    margin: 10px; /*separação entre os campos*/
+    border-radius:30px ;/*arrendonda as bordas do formulário*/
+    border: 1px solid white;/*as bordas do formulário*/
+    font-size: 16pt;/*tamanho da letra dentro do form*/
+    padding:10px 20px;/*posição da letra dentro do formulário*/
+    background-color: rgba(255,255,255, 0.01);/*transparência do funto do input*/
+    color: white;
+    outline: none;/*tirar o sublinhado da caixa selecionada*/
+}
+div#corpo-form{
+   /* background-color: brown; foi comentado para ver o documento*/ 
+    width: 420px; /* diminui o tamanho do documento*/
+    margin: 130px auto 0px auto; /*centraliza o formulário no html*/
+}
+div#corpo-form-Cad{
+    /* background-color: brown; foi comentado para ver o documento*/ 
+     width: 420px; /* diminui o tamanho do documento*/
+     margin: 80px auto 0px auto; /*centraliza o formulário no html*/
+ }
+div#corpo-form h1, div#corpo-form-Cad{/*Alinhar o h1*/
+    text-align: center;/*Centraliza a letra no documento*/
+    padding: 20px;/*alinhamento do texto*/
+
+}
+a{/*Formatação ancora*/
+    color: white;
+    text-decoration: none; /*tira o sublinhado*/
+    text-align: center; /*centralizar ancora*/
+    display: block; /*para centralizar com documento*/
+}
+a:hover{
+    text-decoration: underline;/*quando passar o mouse ele vai sublinha*/
+}
+input[type=submit]{/*formatação do botão acessar*/
+    background-color: #FF0066; /*Cor dentro do botão*/
+    border: none; /*tira as bordas do botão input*/
+    cursor: pointer;/*aparece a maozinha na caixa de seleção*/
+}
+div#msg-sucesso{
+    width: 420px; /*Larugura por causa do corpo do site*/
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(249, 215, 250);
+}
+div.msg-erro{
+    width: 420px; /*Larugura por causa do corpo do site*/
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(250, 222, 215);
+}
