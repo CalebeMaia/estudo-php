@@ -31,6 +31,7 @@
         $p->locomover();
         $re->locomover();*/
         $cach->emitirSom();
+        $cach->locomover();
 
 
         

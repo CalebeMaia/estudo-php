@@ -7,7 +7,7 @@
         }
         public function emitirSom()
     {
-        echo "<p> eu sou um cachorro entao estou correndo rapido </p>";
+        echo "<p> AU!AU!AU!AU!AU!AU! </p>";
     }
         
     }

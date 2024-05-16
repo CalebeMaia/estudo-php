@@ -1,5 +1,5 @@
 <?php 
-    abstract class Animal{
+    abstract class Animal{//não implementa nada pois é uma caixa abstrata
         protected $peso;
         protected $idade;
         protected $membros;

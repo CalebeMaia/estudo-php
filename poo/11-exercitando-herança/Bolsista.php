@@ -10,10 +10,10 @@
         public function setBolsa($bolsa){
             $this->bolsa=$bolsa;
         }
-        public function pagarMensalidade()
-        {
-            echo "pagando mensalidade";
-        }
+        //public function pagarMensalidade()
+       // {
+            //echo "pagando mensalidade";// não deixa pagar mensalidade pois é bolsista
+        //}
 
     }
 
