@@ -1,0 +1,56 @@
+usando a primeira vez no pc
+primeiro digitar no google git download
+https://git-scm.com/downloads
+baixe e instale, após instalação executar git --help se funcionar aparecerá varias informações
+1- git init
+2- git status
+3-git add "nome do arquivo" que esta em vermelho
+4-git status
+os arquivos que ficaram vermelho precisamm adiciona, então para adiciona rodar o seguinte comando
+5-git add .     esse comando adiciona os arquivos pendentes varios
+6- git commit -m "commit inicial"
+vai pedir para digitar git config --global user.email "you@example.com"  coloca o email criado no git
+7-git config --global user.email "meu email criado no gitweb"
+8-git config --global user.name "meu nome" esse comando configura o nome do usuario que fara as alterações]
+feito essa configuração inicial digitar o seguinte comando
+9-git commit -m "commit inicial"
+para mandar esses arquivos na nuvem digitar o comando
+10-git push
+o comando 10 nao vai funciona pois precisa criar um projeto no git web 
+após criar o projeto digitar o comando
+11-git remote add origin https://github.com/CalebeMaia/estudo-php
+12-git push 
+nao ira funcionar pois precisar digitar a origem
+entao digitar o comando
+13-git push --set-upstream origin master
+após fazer outras atualizações rodar o comando 
+14-git status
+git add   digitar o comando que está em vermelho ou 
+15-git add .
+16- git status
+17-git commit -m "nome da modifaçao que ficara no historico"
+18-git push
+agora git ver no git web 
+para ver versoes digitadas excutar comando
+19-git reflog
+voltando o codigo na versao passada ou recente
+20-git reset --hard 1558aa4       esse numero 1558aa4 é o id gerando quando executa o comando git reflog
+21-git branch          mostra estao disponiveis
+para criar mais uma nova branch digitar o comando
+22-git branch NomeDaBranch   -> onde está NomeDaBranch pode ser qualquer nome
+para mudar a branch digitar o comando
+23-git checkouts NomeDabranch  --> aqui esta selecionada a nova branch
+quando criar uma branch nova e rodar o comando git push tem que rodar o comando git push --set-upstream origin NomeDaBranch
+para unir a branch no versionamento princippal, digitar o comando 
+24-git pull
+25-git merge starge   o nome stage foi digitado pois foi lá que gerou as mudanças
+para criar outra branch digita o comando abaixo
+git checkout -b sistema-de-login master  o nome master significa que e a brench que estarei tirando os arquivos
+gitignore e a pasta de segredos ou seja e uma pasta que eu nao quero que ele suba para o repositorio
+26-touch .gitignore
+feito isso abrir o arquivo git ignore em modo txt ele foi criado na pasta do computador, difitar o nome da pasta que nao quer mandar pra nuvem
+exemplo: segredos/
+====================================================================================
+para unir as modificações das branchs executar o passo a passo
+1-git checkout master  --> esse comando muda para braunch master
+2-git merge nomeDaBranchQueFezAtualizacao 

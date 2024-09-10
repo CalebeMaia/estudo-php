@@ -1,0 +1,8 @@
+url amigavel
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}!-f
+RewriteCond %{REQUEST_FILENAME}!-d
+RewriteRule ^(.*)$ /login-mvc/index.php?pag=$1
+
+na linha 5 quando subir para internet o "MVC" substituir por www
+
