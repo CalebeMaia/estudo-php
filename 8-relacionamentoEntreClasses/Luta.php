@@ -22,7 +22,7 @@
             if($this->aprovada){
              $this->desafiado->apresentar();
              $this->desafiante->apresentar();
-             $vencedor=rand(0,2);   
+             $vencedor=rand(0,2);  // server para fazer o sorteio 
              switch($vencedor){
                 case 0: //empate
                     echo "<p> Empate </p>";

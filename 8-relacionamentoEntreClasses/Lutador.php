@@ -26,7 +26,7 @@
        echo " veio diretamente de ". $this->getNacionalidade();
        echo " tem ". $this->getIdade()." anos e pesa " . $this->getPeso()." kg ";
        echo "<br> Ele tem ". $this->getVitorias(). " vitorias ";
-       echo $this->getDerrotas(). " Derrotas e " . $this->getEmpates(). " emaptes ";;
+       echo $this->getDerrotas(). " Derrotas e " . $this->getEmpates(). " emaptes ";
     }
     public function status(){
         echo "<p>-------------------</p>";

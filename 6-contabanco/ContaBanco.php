@@ -10,8 +10,6 @@
         {
             $this->setSaldo(0);
             $this->setStatus(false);
-
-
         }
 
     //metodos

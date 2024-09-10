@@ -5,7 +5,7 @@ class Caneta{
     private $ponta;
     private $tampada;
 
-    public function Caneta($m,$c,$p){//metodo construtor
+    public function Caneta($m,$c,$p){//metodo construtor, é comum colocar o método construtor com o mesmo nome da classe
         $this->modelo=$m;
         $this->cor=$c;
         $this->ponta=$p;
